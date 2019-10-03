@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* bluberry: #6B7A8F
+  apricot: #F7882F
+  citrus: #F7c331
+  apple-core: #DCC7AA
+
+  Are ya yellow?!: #feda6a
+  Silver Fox: #d4d4dc
+  Deep Matte Grey: #393f4d
+  Dark Slate: #1d1e22
+   */
+
+html {
+  background-color: #393f4d;
+}
+body {
+  background-color: #1d1e22;
+}
+header {
+  color: #d4d4dc ;
+  background: #1d1e22;
+  border: 1px solid lightgrey;
+}
+
+ h1{
+  display: flex;
+  justify-content: center;
+}
+ nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: #feda6a;
+}
