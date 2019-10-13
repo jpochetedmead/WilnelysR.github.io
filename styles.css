@@ -14,16 +14,16 @@
   Deep Matte Grey: #393f4d
   Dark Slate: #1d1e22
    */
-
 /****** Header ******/
 html {
   background-color: white;
-
 }
+
 body {
   background-color: #DCC7AA;
   margin: 15px;
 }
+
 header {
   color: white;
   background: #6B7A8F;
@@ -31,12 +31,13 @@ header {
   font-family: 'Nanum Gothic', sans-serif;
 }
 
- h1{
+h1 {
   display: flex;
   justify-content: center;
   font-size: 50px;
 }
- nav {
+
+nav {
   display: flex;
   justify-content: space-around;
   font-size: 20px;
@@ -68,7 +69,11 @@ nav a:hover {
   text-align: center;
   margin: 40px;
   background-color: white;
+  padding: 10px;
+  border-radius: 1em;
+
 }
+
 div {
   display: flex;
   flex-wrap: wrap;
@@ -81,15 +86,20 @@ div {
   border-radius: .5em;
 }
 
-
+.about {
+  padding-bottom: 40px;
+  border-bottom: 2px solid black;
+  border-bottom-style: dashed;
+}
 
 /******* Skills ********/
-
 .skills {
-  padding: 50px 0 50px 0;
   text-align: center;
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 20px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid black;
+  border-bottom-style: dashed;
 }
 
 table {
@@ -97,13 +107,12 @@ table {
   margin: 0 auto;
   width: 90%;
   border-spacing: 10px;
-
 }
 
 th {
   width: 25%;
   background-color: white;
-  color: grey;
+  color: #1d1e22;
 }
 
 td {
@@ -142,43 +151,41 @@ td::before {
   width: 90%;
 }
 
-
 /****** Random Facts ******/
 .random {
   display: flex;
   flex-direction: column;
-
+  padding-bottom: 40px;
 }
 
 .random h2 {
   align-self: center;
-  padding-top: 50px;
+  padding-top: 20px;
   font-size: 30px;
   font-family: 'Nanum Gothic', sans-serif;
 }
 
 .random img {
   border-radius: 1em;
-  width: 400px;
+  width: 520px;
   align-self: center;
-
 }
 
 .random ul {
   background-color: #6B7A8F;
+  width: 380px;
   align-self: center;
   border-radius: 1em;
 }
 
 .random li {
-font-size: 15px;
-padding: 15px;
-color: #ea9452;
-font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  color: #ea9452;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /****** Footer ******/
-
 .contact img {
   width: 70px;
   margin: 20px;
@@ -192,9 +199,68 @@ footer p {
   padding-bottom: 20px;
 }
 
+/** media **/
+
+@media screen and (min-width: 920px) {
+  .about p {
+    display: flex;
+  }
+
+  .about div {
+    display: flex;
+  }
+
+  .about img {
+    height: 260px;
+  }
+
+  .random {
+    display: inline-block;
+    padding-right: 75px;
+    padding-left: 75px;
+    height: 600px;
+  }
+
+  .random h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .random img {
+    width: 60%;
+    float: left;
+  }
+
+  .random ul {
+    width: 36%;
+    float: right;
+    margin-top: 0;
+  }
+
+  .random li {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .about img {
+    height: 218px;
+  }
+
+  .random ul {
+    height: 315px;
+  }
+
+  .random li {
+    height: 45px;
+  }
+}
+
+
+
 
 /****** Projects ******/
-
 .projects {
   padding: 50px;
 }
@@ -204,7 +270,6 @@ footer p {
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
   padding-bottom: 50px;
-
 }
 
 .projects h3 {
@@ -216,7 +281,7 @@ footer p {
 
 .projects a {
   text-decoration: none;
-  color: black;
+  color: #1d1e22;
 }
 
 .other a {
@@ -247,6 +312,12 @@ footer p {
 }
 
 /****** Hobbies ******/
+.painting {
+  padding-bottom: 40px;
+  border-bottom: 2px solid black;
+  border-bottom-style: dashed;
+}
+
 .painting h2 {
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 30px;
@@ -263,6 +334,7 @@ footer p {
   height: 190px;
   padding: 5px;
   border: 2px solid white;
+  border-radius: 1em;
 }
 
 .painting div {
@@ -289,6 +361,7 @@ footer p {
   padding: 5px;
   width: 300px;
   border: 2px solid white;
+  border-radius: 1em;
 }
 
 .cricut div {
