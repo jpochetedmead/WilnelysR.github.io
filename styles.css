@@ -248,6 +248,7 @@ footer p {
 
 /****** Hobbies ******/
 .painting h2 {
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: 30px;
   text-align: center;
   padding-top: 20px;
@@ -255,6 +256,7 @@ footer p {
 
 .painting p {
   padding: 0 40px 40px 40px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .painting img {
@@ -265,4 +267,33 @@ footer p {
 
 .painting div {
   padding-left: 20px;
+  background: #6B7A8F;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/** Cricut **/
+.cricut h2 {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cricut p {
+  padding: 0 40px 40px 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cricut img {
+  padding: 5px;
+  width: 300px;
+  border: 2px solid white;
+}
+
+.cricut div {
+  padding-left: 20px;
+  background: #6B7A8F;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
