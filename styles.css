@@ -171,7 +171,7 @@ td::before {
 }
 
 .random li {
-  font-size: 20px;
+font-size: 15px;
 padding: 15px;
 color: #ea9452;
 font-family: 'Open Sans', sans-serif;
@@ -194,3 +194,52 @@ footer p {
 
 
 /****** Projects ******/
+
+.projects {
+  padding: 50px;
+}
+
+.projects h2 {
+  font-size: 39px;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  padding-bottom: 50px;
+
+}
+
+.projects h3 {
+  font-size: 29px;
+  font-family: 'Nanum Gothic', sans-serif;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.projects a {
+  text-decoration: none;
+}
+
+.other a {
+  font-size: 15px;
+  font-family: 'Nanum Gothic', sans-serif;
+  background-color: white;
+  padding: 5px;
+  border-radius: .5em;
+}
+
+.projects p {
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  padding-bottom: 45px;
+  background-color: #6B7A8F;
+  padding: 20px;
+}
+
+.projects h4 {
+  text-align: center;
+  margin: 0;
+}
+
+.other-lab {
+  background-color: #6B7A8F;
+  padding: 20px;
+}
