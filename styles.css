@@ -15,27 +15,154 @@
   Dark Slate: #1d1e22
    */
 
+/****** Header ******/
 html {
-  background-color: #393f4d;
+  background-color: white;
 }
 body {
-  background-color: #1d1e22;
+  background-color: #DCC7AA;
 }
 header {
-  color: #d4d4dc ;
-  background: #1d1e22;
-  border: 1px solid lightgrey;
+  color: white;
+  background: #6B7A8F;
+  border: 1px solid white;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
  h1{
   display: flex;
   justify-content: center;
+  font-size: 50px;
 }
  nav {
   display: flex;
   justify-content: space-around;
+  font-size: 20px;
 }
 
 nav a {
-  color: #feda6a;
+  color: #F7882F;
+  padding-bottom: 10px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav a:hover {
+  color: white;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+/****** About Me ******/
+.about h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: white;
+}
+
+.about p {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 40px;
+  background-color: white;
+}
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about img {
+  height: 190px;
+  margin: 10px;
+  border-radius: .5em;
+}
+
+
+
+/******* Skills ********/
+
+.skills {
+  text-align: center;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 20px;
+}
+
+table {
+  background-color: #6B7A8F;
+  margin: 0 auto;
+  width: 90%;
+  border-spacing: 10px;
+
+}
+
+th {
+  width: 25%;
+  background-color: white;
+  color: grey;
+}
+
+td {
+  text-align: right;
+  background-color: white;
+  padding-right: 10px;
+  font-size: .9rem;
+}
+
+td, th {
+  border: 1px solid #F7882F;
+  margin-bottom: 2rem;
+}
+
+td::before {
+  height: 30px;
+  background-color: #F7c331;
+  float: left;
+  content: "";
+  padding: 0;
+}
+
+.html::before {
+  width: 80%;
+}
+
+.css::before {
+  width: 65%;
+}
+
+.git::before {
+  width: 70%;
+}
+
+.coffee-chart::before {
+  width: 90%;
+}
+
+
+/****** Random Facts ******/
+.random {
+}
+
+.random h2 {
+
+  font-size: 30px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.random img {
+  height: 250px;
+
+}
+
+.random ul {
+  width: 50%;
+  background-color: #6B7A8F;
+}
+
+.random li {
+padding: 8px;
+color: #ea9452;
+font-family: 'Open Sans', sans-serif;
+
 }
