@@ -4,29 +4,25 @@
   box-sizing: border-box;
 }
 
-/* bluberry: #6B7A8F
-  apricot: #F7882F
-  citrus: #F7c331
-  apple-core: #DCC7AA
-
-  Are ya yellow?!: #feda6a
-  Silver Fox: #d4d4dc
-  Deep Matte Grey: #393f4d
-  Dark Slate: #1d1e22
-   */
+/* Colors:
+    dark grey-#3c4245
+   light grey-#5f6769
+   blueish-#719192
+   pink-#dfcdc3
+*/
 /****** Header ******/
 html {
   background-color: white;
 }
 
 body {
-  background-color: #DCC7AA;
+  background-color: #dfcdc3;
   margin: 15px;
 }
 
 header {
   color: white;
-  background: #6B7A8F;
+  background: #3c4245;
   border: 1px solid white;
   font-family: 'Nanum Gothic', sans-serif;
 }
@@ -44,7 +40,7 @@ nav {
 }
 
 nav a {
-  color: #F7882F;
+  color: #dfcdc3;
   padding-bottom: 10px;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
@@ -55,13 +51,14 @@ nav a:hover {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
-/****** About Me ******/
+/******* About Me *******/
 .about h2 {
   display: flex;
   justify-content: center;
   font-size: 30px;
   font-family: 'Nanum Gothic', sans-serif;
   color: white;
+  padding-top: 20px;
 }
 
 .about p {
@@ -71,7 +68,7 @@ nav a:hover {
   background-color: white;
   padding: 10px;
   border-radius: 1em;
-
+  border: 1px solid #dfcdc3;
 }
 
 div {
@@ -83,23 +80,27 @@ div {
 .about img {
   height: 190px;
   margin: 10px;
+  border: 1px solid #dfcdc3;
   border-radius: .5em;
 }
 
 .about {
+  background-color: #5f6769;
   padding-bottom: 40px;
-  border-bottom: 2px solid black;
-  border-bottom-style: dashed;
 }
 
-/******* Skills ********/
+/********* Skills ********/
 .skills {
   text-align: center;
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 20px;
+  background: #5f6769;
   padding-bottom: 40px;
-  border-bottom: 2px solid black;
-  border-bottom-style: dashed;
+}
+
+.skills h2 {
+  padding-top: 20px;
+  color: white;
 }
 
 table {
@@ -129,36 +130,39 @@ td, th {
 
 td::before {
   height: 30px;
-  background-color: #F7c331;
+  background-color: #719192;
   float: left;
   content: "";
   padding: 0;
 }
 
 .html::before {
-  width: 80%;
+  width: 60%;
 }
 
 .css::before {
-  width: 65%;
+  width: 50%;
 }
 
 .git::before {
-  width: 70%;
+  width: 60%;
 }
 
 .coffee-chart::before {
   width: 90%;
 }
 
-/****** Random Facts ******/
+/******** Random Facts ********/
 .random {
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
+  margin-top: 24px;
+  background: #719192;
 }
 
 .random h2 {
+  color: white;
   align-self: center;
   padding-top: 20px;
   font-size: 30px;
@@ -167,25 +171,35 @@ td::before {
 
 .random img {
   border-radius: 1em;
-  width: 520px;
+  width: 90%;
+  height: auto;
   align-self: center;
+  border: 1px solid #dfcdc3;
 }
 
 .random ul {
-  background-color: #6B7A8F;
-  width: 380px;
+  background-color: #dfcdc3;
+  border: 2px solid white;
+  height: 90%;
   align-self: center;
   border-radius: 1em;
 }
 
 .random li {
   font-size: 20px;
+  height: 100%;
   padding: 5px;
-  color: #ea9452;
+  color: #3c4245;
   font-family: 'Open Sans', sans-serif;
+  list-style: circle;
 }
 
-/****** Footer ******/
+/*********Footer *********/
+footer {
+  margin: 25px;
+  padding: 25px;
+}
+
 .contact img {
   width: 70px;
   margin: 20px;
@@ -199,77 +213,17 @@ footer p {
   padding-bottom: 20px;
 }
 
-/** media **/
-
-@media screen and (min-width: 920px) {
-  .about p {
-    display: flex;
-  }
-
-  .about div {
-    display: flex;
-  }
-
-  .about img {
-    height: 260px;
-  }
-
-  .random {
-    display: inline-block;
-    padding-right: 75px;
-    padding-left: 75px;
-    height: 600px;
-  }
-
-  .random h2 {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-
-  .random img {
-    width: 60%;
-    float: left;
-  }
-
-  .random ul {
-    width: 36%;
-    float: right;
-    margin-top: 0;
-  }
-
-  .random li {
-    font-size: 17px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-
-  .about img {
-    height: 218px;
-  }
-
-  .random ul {
-    height: 315px;
-  }
-
-  .random li {
-    height: 45px;
-  }
-}
-
-
-
-
-/****** Projects ******/
+/********** Projects **********/
 .projects {
   padding: 50px;
 }
 
 .projects h2 {
-  font-size: 39px;
+  font-size: 40px;
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
   padding-bottom: 50px;
+  text-shadow: 3px 3px 2px #719192;
 }
 
 .projects h3 {
@@ -284,6 +238,11 @@ footer p {
   color: #1d1e22;
 }
 
+.projects a:hover {
+  background: white;
+  border-radius: .5em;
+}
+
 .other a {
   font-size: 15px;
   font-family: 'Nanum Gothic', sans-serif;
@@ -296,7 +255,6 @@ footer p {
   font-family: 'Open Sans', sans-serif;
   text-align: justify;
   padding-bottom: 45px;
-  background-color: #6B7A8F;
   padding: 20px;
   color: white;
 }
@@ -307,11 +265,19 @@ footer p {
 }
 
 .other-lab {
-  background-color: #6B7A8F;
   padding: 20px;
+  background-color: #719192;
+  border-radius: 1em;
 }
 
-/****** Hobbies ******/
+.recreate {
+  background: #719192;
+  border-radius: 1em;
+}
+
+/******** Hobbies ********/
+
+/*** painting ***/
 .painting {
   padding-bottom: 40px;
   border-bottom: 2px solid black;
@@ -320,53 +286,136 @@ footer p {
 
 .painting h2 {
   font-family: 'Nanum Gothic', sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   padding-top: 20px;
+  text-shadow: 3px 3px 2px #719192;
 }
 
 .painting p {
-  padding: 0 40px 40px 40px;
+  padding: 20px;
+  40px 40px 40px;
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 17px;
+  background-color: #719192;
+  color: black;
 }
 
 .painting img {
-  height: 190px;
+  height: 200px;
   padding: 5px;
-  border: 2px solid white;
+  border: 2px solid #dfcdc3;
   border-radius: 1em;
 }
 
 .painting div {
-  padding-left: 20px;
-  background: #6B7A8F;
+  width: 100%;
+  background: #5f6769;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/** Cricut **/
+/*** Cricut ***/
 .cricut h2 {
   font-family: 'Nanum Gothic', sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   padding-top: 20px;
+  text-shadow: 3px 3px 2px #719192;
 }
 
 .cricut p {
-  padding: 0 40px 40px 40px;
+  padding: 20px 40px 40px 40px;
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 17px;
+  background-color: #719192;
+  color: black;
 }
 
 .cricut img {
   padding: 5px;
-  width: 300px;
-  border: 2px solid white;
+  height: 200px;
+  border: 2px solid #dfcdc3;
   border-radius: 1em;
 }
 
 .cricut div {
   padding-left: 20px;
-  background: #6B7A8F;
+  background: #5f6769;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+/********** media ************/
+@media screen and (min-width: 800px) {
+  .about p {
+    display: flex;
+  }
+
+  .about div {
+    display: flex;
+  }
+
+  .about img {
+    height: 260px;
+  }
+
+  .random {
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .random h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .random img {
+    width: 63%;
+    float: left;
+  }
+
+  .random ul {
+    height: 58%;
+    width: 36%;
+    float: right;
+    margin-top: 0;
+  }
+
+  .random li {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 100%;
+  }
+
+  .about p {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .about img {
+    height: 218px;
+  }
+
+  .random ul {
+    height: 90%;
+  }
+
+  .random li {
+    height: 75px;
+    font-size: 22px;
+  }
+
+  .random img {
+    max-width: 58%;
+    max-height: 90%;
+  }
 }
